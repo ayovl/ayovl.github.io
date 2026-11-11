@@ -150,5 +150,6 @@ function reveal(btn){var a=btn.nextElementSibling;a.style.display='block';btn.st
 <script>
 (function(){var facts=["<strong>Which organ regrows</strong> after half of it is cut away?", "<strong>Babies have 300 bones.</strong> Adults have how many?", "<strong>Which part of your eye</strong> has no blood supply?", "<strong>How many times a day</strong> does a penguin fall asleep?"];var b=document.getElementById('obliq-bubble');if(!b)return;var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduced)return;var i=0;setInterval(function(){if(document.hidden)return;i=(i+1)%facts.length;b.style.opacity=0;setTimeout(function(){b.innerHTML=facts[i];b.style.opacity=1;},450);},4000);})();
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
