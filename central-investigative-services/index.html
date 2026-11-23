@@ -25,6 +25,7 @@
     --line-soft:rgba(28,25,20,.12);
     --gold:#7a5f27;
     --gold-soft:#5f4a1e;
+    --gold-key:#96771d;
     --btn-bg:#a98d4d;
     --btn-text:#17140f;
     --accent-tint:rgba(169,141,77,.1);
@@ -67,6 +68,7 @@
       --line-soft:rgba(240,234,217,.09);
       --gold:#c8a75a;
       --gold-soft:#e5c981;
+      --gold-key:#f2dda6;
       --btn-bg:#c8a75a;
       --btn-text:#17140f;
       --accent-tint:rgba(200,167,90,.09);
@@ -192,7 +194,7 @@
   .trust-item{padding:32px 28px;text-align:center;border-left:1px solid var(--line-soft)}
   .trust-item:first-child{border-left:none}
   .trust-item b{display:block;font-family:Georgia,serif;font-size:1.08rem;color:var(--gold-soft);margin-bottom:3px}
-  .trust-item b .count,.trust-item b .num{font:inherit;font-size:1.28em;font-weight:inherit;letter-spacing:inherit;line-height:inherit;vertical-align:baseline;font-variant-numeric:tabular-nums;color:inherit}
+  .trust-item b .count,.trust-item b .num{font:inherit;font-size:1.28em;font-weight:inherit;letter-spacing:inherit;line-height:inherit;vertical-align:baseline;font-variant-numeric:tabular-nums;color:var(--gold-key)}
   .trust-item span{font-size:.85rem;color:var(--muted)}
 
   /* ---------- About ---------- */
@@ -513,9 +515,9 @@
   <div class="trust-strip">
     <div class="wrap trust-in">
       <div class="trust-item"><b><span class="count" data-count="24">0</span> / <span class="num">7</span> Availability</b><span>Investigators on call, day and night</span></div>
-      <div class="trust-item"><b><span class="count" data-count="100">0</span>% Confidential</b><span>Strict privacy on every matter</span></div>
+      <div class="trust-item"><b><span class="count" data-count="100">0</span><span class="num">%</span> Confidential</b><span>Strict privacy on every matter</span></div>
       <div class="trust-item"><b><span class="count" data-count="7">0</span> Services, One Team</b><span>Coverage across Australia and worldwide</span></div>
-      <div class="trust-item"><b>$<span class="count" data-count="0">0</span> To Talk</b><span>Obligation free consultations, no pressure</span></div>
+      <div class="trust-item"><b><span class="num">$</span><span class="count" data-count="0">0</span> To Talk</b><span>Obligation free consultations, no pressure</span></div>
     </div>
   </div>
 </div>
