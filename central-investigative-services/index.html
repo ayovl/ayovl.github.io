@@ -8,77 +8,86 @@
 <meta name="color-scheme" content="light dark">
 <style>
   /* Layout pass 2: generous side margins and negative space throughout */
-  /* Light theme: warm editorial paper, ink text, one muted brass accent */
+  /* Brand palette sampled from the client's own logo: antique metallic gold
+     (#a98d4d, highlights #e5c981) on warm near-black (#141312 family).
+     Light theme: warm ivory neutrals, logo-black ink text, deep brand gold accents,
+     buttons in true brand gold with ink text, exactly like the badge.
+     Dark theme: the logo's own world, warm near-black with brightened brand gold. */
   :root{
-    --bg:#faf7f1;
-    --bg2:#f3eee3;
-    --panel:#f8f4ea;
-    --panel2:#fffdf8;
-    --footer-bg:#f0e9da;
-    --header-bg:rgba(250,247,241,.92);
-    --nav-bg:#faf7f1;
-    --line:rgba(138,106,36,.3);
-    --line-soft:rgba(62,52,36,.13);
-    --gold:#8a6a24;
-    --gold-soft:#75591b;
-    --accent-tint:rgba(138,106,36,.08);
-    --accent-tint2:rgba(138,106,36,.16);
-    --ring-soft:rgba(138,106,36,.08);
-    --ring-line:rgba(138,106,36,.25);
-    --accent-ghost:rgba(138,106,36,.42);
-    --text:#211d15;
-    --muted:#5d5647;
-    --muted2:#8a8171;
+    --bg:#f7f4ee;
+    --bg2:#efe9db;
+    --panel:#f3eee1;
+    --panel2:#fdfbf6;
+    --footer-bg:#ece4d0;
+    --header-bg:rgba(247,244,238,.92);
+    --nav-bg:#f7f4ee;
+    --line:rgba(169,141,77,.5);
+    --line-soft:rgba(28,25,20,.12);
+    --gold:#7a5f27;
+    --gold-soft:#5f4a1e;
+    --btn-bg:#a98d4d;
+    --btn-text:#17140f;
+    --accent-tint:rgba(169,141,77,.1);
+    --accent-tint2:rgba(169,141,77,.18);
+    --ring-soft:rgba(169,141,77,.1);
+    --ring-line:rgba(169,141,77,.32);
+    --accent-ghost:rgba(122,95,39,.4);
+    --text:#1c1a16;
+    --muted:#57503f;
+    --muted2:#8b8170;
     --field-bg:#fffdf8;
-    --medallion-bg:radial-gradient(circle at 35% 30%, #ffffff, #eee6d3);
-    --shadow:0 30px 60px rgba(62,48,18,.14);
-    --strip-bg:rgba(138,106,36,.05);
-    --grid-line:rgba(62,52,36,.045);
+    --medallion-bg:radial-gradient(circle at 35% 30%, #ffffff, #ece1c6);
+    --shadow:0 30px 60px rgba(28,24,14,.16);
+    --strip-bg:rgba(169,141,77,.07);
+    --grid-line:rgba(28,25,20,.05);
     --hero-bg:
-      radial-gradient(900px 500px at 85% -10%, rgba(138,106,36,.1), transparent 60%),
-      linear-gradient(180deg,#fbf8f1 0%, #faf7f1 100%);
+      radial-gradient(900px 500px at 85% -10%, rgba(169,141,77,.13), transparent 60%),
+      linear-gradient(180deg,#faf7f0 0%, #f7f4ee 100%);
     --conf-bg:
-      radial-gradient(700px 400px at 50% 0%, rgba(138,106,36,.09), transparent 65%),
-      linear-gradient(180deg,#f5f0e4,#faf7f1);
+      radial-gradient(700px 400px at 50% 0%, rgba(169,141,77,.1), transparent 65%),
+      linear-gradient(180deg,#f1ead8,#f7f4ee);
     --ok-bg:rgba(46,110,60,.08);
     --ok-line:rgba(46,110,60,.35);
     --ok-text:#2c6b3a;
     --radius:14px;
     --max:1120px;
   }
-  /* Dark theme: deep warm charcoal counterpart, same brass adjusted for contrast */
+  /* Dark theme: warm near-black from the logo, brand gold brightened toward
+     the logo's own highlight gold (#e5c981) for contrast */
   @media (prefers-color-scheme: dark){
     :root{
-      --bg:#171410;
-      --bg2:#1e1a15;
-      --panel:#221e17;
-      --panel2:#29241b;
-      --footer-bg:#100d09;
-      --header-bg:rgba(23,20,16,.92);
-      --nav-bg:#1e1a15;
-      --line:rgba(201,162,75,.26);
-      --line-soft:rgba(255,250,238,.09);
-      --gold:#c9a24b;
-      --gold-soft:#e3c878;
-      --accent-tint:rgba(201,162,75,.08);
-      --accent-tint2:rgba(201,162,75,.16);
-      --ring-soft:rgba(201,162,75,.07);
-      --ring-line:rgba(201,162,75,.18);
-      --accent-ghost:rgba(201,162,75,.38);
-      --text:#f2ecdd;
-      --muted:#b3aa97;
-      --muted2:#948b78;
-      --field-bg:#100d09;
-      --medallion-bg:radial-gradient(circle at 35% 30%, #372c1a, #171310);
-      --shadow:0 30px 60px rgba(0,0,0,.5);
-      --strip-bg:rgba(255,250,238,.03);
-      --grid-line:rgba(255,250,238,.03);
+      --bg:#12100d;
+      --bg2:#171410;
+      --panel:#1c1913;
+      --panel2:#231f16;
+      --footer-bg:#0b0a08;
+      --header-bg:rgba(18,16,13,.92);
+      --nav-bg:#171410;
+      --line:rgba(200,167,90,.3);
+      --line-soft:rgba(240,234,217,.09);
+      --gold:#c8a75a;
+      --gold-soft:#e5c981;
+      --btn-bg:#c8a75a;
+      --btn-text:#17140f;
+      --accent-tint:rgba(200,167,90,.09);
+      --accent-tint2:rgba(200,167,90,.17);
+      --ring-soft:rgba(200,167,90,.08);
+      --ring-line:rgba(200,167,90,.22);
+      --accent-ghost:rgba(200,167,90,.4);
+      --text:#f0ead9;
+      --muted:#b0a78f;
+      --muted2:#8f8672;
+      --field-bg:#12100c;
+      --medallion-bg:radial-gradient(circle at 35% 30%, #3a2f1a, #14110b);
+      --shadow:0 30px 60px rgba(0,0,0,.55);
+      --strip-bg:rgba(200,167,90,.05);
+      --grid-line:rgba(240,234,217,.035);
       --hero-bg:
-        radial-gradient(900px 500px at 85% -10%, rgba(201,162,75,.1), transparent 60%),
-        linear-gradient(180deg,#1a1611 0%, #171410 100%);
+        radial-gradient(900px 500px at 85% -10%, rgba(200,167,90,.11), transparent 60%),
+        linear-gradient(180deg,#161310 0%, #12100d 100%);
       --conf-bg:
-        radial-gradient(700px 400px at 50% 0%, rgba(201,162,75,.09), transparent 65%),
-        linear-gradient(180deg,#1a1611,#171410);
+        radial-gradient(700px 400px at 50% 0%, rgba(200,167,90,.09), transparent 65%),
+        linear-gradient(180deg,#161310,#12100d);
       --ok-bg:rgba(74,222,128,.1);
       --ok-line:rgba(74,222,128,.4);
       --ok-text:#bbf7d0;
@@ -133,7 +142,7 @@
     padding:13px 26px;border-radius:8px;font-weight:600;font-size:.95rem;
     transition:.25s;border:1px solid transparent;cursor:pointer;
   }
-  .btn-gold{background:var(--gold);color:#fdfaf1}
+  .btn-gold{background:var(--btn-bg);color:var(--btn-text)}
   .btn-gold:hover{filter:brightness(1.1);transform:translateY(-1px)}
   .btn-ghost{border-color:var(--gold);color:var(--gold-soft);background:var(--accent-tint)}
   .btn-ghost:hover{background:var(--accent-tint2);color:var(--gold-soft)}
@@ -349,7 +358,7 @@
   /* ---------- Floating call button (mobile) ---------- */
   .float-call{
     display:none;position:fixed;left:22px;right:22px;bottom:18px;z-index:150;
-    background:var(--gold);color:#fdfaf1;
+    background:var(--btn-bg);color:var(--btn-text);
     text-align:center;padding:15px;border-radius:10px;font-weight:700;font-size:1rem;
     box-shadow:var(--shadow);
   }
